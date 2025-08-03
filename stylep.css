@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b0c2a;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #111222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px #ff4ecd;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff4ecd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4ecd;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(11, 12, 42, 0.85);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero-content span {
+  color: #ff4ecd;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff4ecd;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2de2e6;
+  color: #000;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff4ecd;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #191b3a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #2de2e6;
+  background-color: #21234c;
+}
+
+footer {
+  background: #111222;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+  color: #aaa;
+}
